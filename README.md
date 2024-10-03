@@ -1,2 +1,2 @@
 # HexoBlogProject
-Hexoを基づいてブログを作りため
+Hexoに基づいてブログを作りため
