@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Countdown timer</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    window.addEventListener('error', function (e) {
+      alert(
+        'msg=' + e.message +
+        ' file=' + e.filename +
+        ' line=' + e.lineno +
+        ' col=' + e.colno +
+        ' stack=' + (e.error && e.error.stack)
+      )
+      window.onunhandledrejection = function (e) {
+        alert("Promise Error:\n" + e.reason);
+      };
+    })
+  </script>
+  <script type="module" src="../src/count-down.jsx"></script>
+</body>
+
+</html>

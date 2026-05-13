@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.countDown {
+  flex: 1;
+  display: flex; 
+  justify-content: center; 
+  align-items:center;
+}
+
+.timeoutFlash {
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  0%, 50% { background-color: red; }
+  50%, 100% { background-color: white; }
+}
+
+.timeContorl {
+  display: flex; 
+  justify-content: center; 
+  gap: 0.5em;
+}
+
+.timeText {
+  font-family: monospace;
+  text-align: center;
+  font-size: 18vw;
+  padding: auto;
+}
